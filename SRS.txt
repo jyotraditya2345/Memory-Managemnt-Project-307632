@@ -1,0 +1,14 @@
+The details of the program.
+
+•	The program includes several header files, including <iostream>, <exception>, <Windows.h>, and <process.h>.
+•	The program defines a template function called my_isnan() which takes a single argument of any type and returns true if the value is NaN (not a number) or false otherwise.
+•	The program defines a class called MyException which is derived from std::exception. The class includes a constructor that takes a string argument and a virtual function called what()     which returns the message associated with the exception.
+•	The program defines a function called allocateMemoryThread() which is used to allocate memory using the malloc() function in a separate thread. The function takes a void pointer argument which is not used.
+•	The program defines a function called main() which is the entry point of the program. The function performs the following tasks:
+•	It uses the GetDiskFreeSpaceEx() function to retrieve information about the disk space available on the C: drive. If there is less than 1GB of free space, a warning message is displayed.
+•	It uses the GetSystemInfo() function to retrieve information about the memory address space available to the program.
+•	It demonstrates memory allocation and deallocation using the malloc(), calloc(), and realloc() functions.
+•	The program defines a function called demonstrateMultithreading() which demonstrates multithreading by calling the allocateMemoryThread() function in four separate threads.
+•	The program defines a class called Allocator which provides a basic interface for memory allocation. The class is not fully implemented in this program and is intended as a starting point for further development.
+•	The program includes several error-handling mechanisms, including try-catch blocks to catch exceptions and error messages displayed when memory allocation fails.
+•	The program includes comments throughout the code to explain its purpose and how it works.
